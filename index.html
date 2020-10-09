@@ -1,0 +1,23 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <title>Routing</title>
+    <style>
+      html, body { font-family: Arial, Helvetica, sans-serif; text-align: center; }
+      #submit-btn { padding: 12px 6px; }
+    </style>
+    <script src="route.js"></script>
+  </head>
+  <body>
+    <h1 id="msg">Redirecting..... Please wait!</h1>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            console.log("DOM content loaded");
+            if(notFound == 1) {
+                document.getElementById('msg').innerHTML = 'Page does not exist';
+                document.getElementsByTagName('body')[0].innerHTML += '<a href="https://signior-x.github.io/url">Back to Home</a>'
+            }
+        });
+    </script>
+  </body>
+</html>
